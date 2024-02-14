@@ -62,6 +62,7 @@ dependencies {
     implementation(Dependencies.composeUiGraphics)
     implementation(Dependencies.composeUiTooling)
     implementation(Dependencies.composeMaterial3)
+    implementation(Dependencies.navigationCompose)
 
     implementation(project(Modules.utilities))
     implementation(Dependencies.hiltAndroid)

@@ -35,12 +35,6 @@ android {
 dependencies {
 
     implementation(Dependencies.coreKtx)
-    implementation(Dependencies.lifecycleRuntimeKtx)
-    implementation(Dependencies.activityCompose)
-    implementation(Dependencies.composeBom)
-    implementation(Dependencies.composeUi)
-    implementation(Dependencies.composeUi)
-    implementation(Dependencies.composeUiGraphics)
-    implementation(Dependencies.composeUiTooling)
-    implementation(Dependencies.composeMaterial3)
+    implementation(Dependencies.appCompat)
+    implementation(Dependencies.material)
 }

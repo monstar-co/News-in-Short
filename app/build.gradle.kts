@@ -79,6 +79,7 @@ dependencies {
 
     implementation(Dependencies.coroutineCore)
     implementation(Dependencies.coroutinesAndroid)
+    implementation(Dependencies.splashScreen)
 }
 
 kapt {

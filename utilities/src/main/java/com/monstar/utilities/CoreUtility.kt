@@ -6,7 +6,7 @@ object CoreUtility {
 
     fun isInternetConnected(context: Context) : Boolean {
         val connectivityManager =
-            context.getSystemService(context.CONNECTIVITY_SERVICE) as ConnectivityManager
+            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
         val networkCapabilities = connectivityManager.activeNetwork ?: return false
         val actNw = connectivityManager.getNetworkCapabilities(networkCapabilities) ?: return false
         val result = when {

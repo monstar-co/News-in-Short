@@ -1,4 +1,4 @@
-package com.monstar.newsinshort
+package com.monstar.newsinshort.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

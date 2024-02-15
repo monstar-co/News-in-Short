@@ -77,9 +77,11 @@ dependencies {
     implementation(Dependencies.moshiConverter)
     implementation(Dependencies.loggingInterceptor)
 
+    implementation(Dependencies.splashScreen)
+    
     implementation(Dependencies.coroutineCore)
     implementation(Dependencies.coroutinesAndroid)
-    implementation(Dependencies.splashScreen)
+
 }
 
 kapt {

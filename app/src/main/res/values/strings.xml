@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NewsInShort</string>
+    <string name="no_need_at_the_moment_please_check_back_later">No need at the moment.\nPlease check back later</string>
 </resources>

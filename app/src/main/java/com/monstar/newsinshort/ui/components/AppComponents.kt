@@ -18,6 +18,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.monstar.newsinshort.data.entity.Article
 import com.monstar.newsinshort.data.entity.NewsResponse
 import com.monstar.newsinshort.ui.theme.Purple40
 
@@ -41,7 +42,7 @@ fun LoadingSpinner() {
 }
 
 @Composable
-fun NewsList(response: NewsResponse) {
+fun NewsList(response: NewsResponse, page: Int) {
     LazyColumn {
         items(response.articles) { article ->
             NormalTextComponent(textValue = article.title ?: "NA")
@@ -62,4 +63,9 @@ fun NormalTextComponent(textValue: String) {
             fontWeight = FontWeight.Normal
         )
     )
+}
+
+@Composable
+fun NewsRowComponent (page: Int, article: Article ){
+NormalTextComponent(textValue = "$page \n\n ${article.title}")
 }
